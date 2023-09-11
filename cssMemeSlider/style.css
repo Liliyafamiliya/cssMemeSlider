@@ -22,6 +22,10 @@
     filter: drop-shadow(0 0 1rem rgba(240, 223, 223, 0.6)); 
     box-shadow: 1rem 1rem 1rem .6rem rgb(212, 94, 151);
    }
+
+   .hidden-input {
+    scale: 0;
+   }
    
    .images-container {
     overflow: hidden;
@@ -33,6 +37,7 @@
    .images {
     display: flex;
     width: 400%;
+    transition: margin-left .4s ease-in-out;
    }
      
    .image {
@@ -54,5 +59,82 @@
    .image4 {
     background-image: url(./assets/image4.jpg);
    }
+
+   #slide1:checked ~ .images-container .images {
+    margin-left: 0;
+   }
+   #slide2:checked ~ .images-container .images {
+    margin-left: -100%;
+   }
+   #slide3:checked ~ .images-container .images {
+    margin-left: -200%;
+   }
+   #slide4:checked ~ .images-container .images {
+    margin-left: -300%;
+   }
+
+  .btns-and-texts {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 5%;
+  }
+
+  .btns {
+    display: flex;
+  }
+  
+  .btn-container {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .btn {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 0.1rem double white;
+    cursor: pointer;
+    background: rgb(164, 8, 83);
+  }
+  
+  .btn:hover {
+    background-color: #ff0066;
+  } 
+
+  .btn:active {
+    background-color: rgb(242, 128, 242);
+  }
+
+  .texts-container {
+    overflow: hidden;
+  }
+  
+  .texts {
+    display: flex;
+    width: 400%;
+    transition: margin-left .4s ease-in-out;
+  }
+  
+  .text-content {
+    width: 100%;
+    color: rgb(164, 8, 83);
+  }
+  
+  #slide1:checked ~ .btns-and-texts .texts {
+    margin-left: 0; 
+  }
+  #slide2:checked ~ .btns-and-texts .texts {
+    margin-left: -100%;
+  }
+  #slide3:checked ~ .btns-and-texts .texts {
+    margin-left: -200%;
+  }
+  #slide4:checked ~ .btns-and-texts .texts {
+    margin-left: -300%;
+  }
+
+  
 
 
