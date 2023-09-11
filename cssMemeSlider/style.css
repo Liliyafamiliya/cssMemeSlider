@@ -135,6 +135,16 @@
     margin-left: -300%;
   }
 
-  
-
+  #slide1:checked ~ .btns-and-texts .btn-container .btn1 {
+    background: none;
+  }
+  #slide2:checked ~ .btns-and-texts .btn-container .btn2 {
+    background: none;
+  }
+  #slide3:checked ~ .btns-and-texts .btn-container .btn3 {
+    background: none;
+  }
+  #slide4:checked ~ .btns-and-texts .btn-container .btn4 {
+    background: none;
+  }
 
