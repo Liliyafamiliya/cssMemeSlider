@@ -148,3 +148,16 @@
     background: none;
   }
 
+  @media (max-width: 568px) {
+    .btns-and-texts {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btns {
+      margin-left: 0;
+    }
+    .texts-container {
+      width: 100%;
+    }
+  }
+
