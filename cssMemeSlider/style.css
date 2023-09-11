@@ -36,7 +36,7 @@
    
    .images {
     display: flex;
-    width: 400%;
+    width: 500%;
     transition: margin-left .4s ease-in-out;
    }
      
@@ -49,6 +49,9 @@
     transition: opacity .7s ease-in-out; 
    }
   
+   .image0 {
+    background-image: url(./assets/image0.jpg);
+   }
    .image1 {
     background-image: url(./assets/image1.jpg);
    }
@@ -62,19 +65,23 @@
     background-image: url(./assets/image4.jpg);
    }
 
-   #slide1:checked ~ .images-container .images {
-    margin-left: 0;
+   #slide0:checked ~ .images-container .images {
+    margin-left: 0%;
    }
-   #slide2:checked ~ .images-container .images {
+   #slide1:checked ~ .images-container .images {
     margin-left: -100%;
    }
-   #slide3:checked ~ .images-container .images {
+   #slide2:checked ~ .images-container .images {
     margin-left: -200%;
    }
-   #slide4:checked ~ .images-container .images {
+   #slide3:checked ~ .images-container .images {
     margin-left: -300%;
    }
+   #slide4:checked ~ .images-container .images {
+    margin-left: -400%;
+   }
 
+   #slide0:checked ~ .images-container .image0,
    #slide1:checked ~ .images-container .image1,
    #slide2:checked ~ .images-container .image2,
    #slide3:checked ~ .images-container .image3,
@@ -122,7 +129,7 @@
   
   .texts {
     display: flex;
-    width: 400%;
+    width: 500%;
     transition: margin-left .4s ease-in-out;
   }
   
@@ -131,19 +138,26 @@
     color: rgb(164, 8, 83);
   }
   
+  #slide0:checked ~ .btns-and-texts .texts {
+    margin-left: 0%;
+   }
   #slide1:checked ~ .btns-and-texts .texts {
-    margin-left: 0; 
+    margin-left: -100%; 
   }
   #slide2:checked ~ .btns-and-texts .texts {
-    margin-left: -100%;
-  }
-  #slide3:checked ~ .btns-and-texts .texts {
     margin-left: -200%;
   }
-  #slide4:checked ~ .btns-and-texts .texts {
+  #slide3:checked ~ .btns-and-texts .texts {
     margin-left: -300%;
   }
+  #slide4:checked ~ .btns-and-texts .texts {
+    margin-left: -400%;
+  }
 
+
+  #slide0:checked ~ .btns-and-texts .btn-container .btn0 {
+    background: none;
+  }
   #slide1:checked ~ .btns-and-texts .btn-container .btn1 {
     background: none;
   }
