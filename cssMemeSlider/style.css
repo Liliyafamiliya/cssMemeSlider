@@ -45,6 +45,8 @@
     height: 50vh;
     background-size: cover;
     background-position: center;
+    opacity: 0; 
+    transition: opacity .7s ease-in-out; 
    }
   
    .image1 {
@@ -71,6 +73,13 @@
    }
    #slide4:checked ~ .images-container .images {
     margin-left: -300%;
+   }
+
+   #slide1:checked ~ .images-container .image1,
+   #slide2:checked ~ .images-container .image2,
+   #slide3:checked ~ .images-container .image3,
+   #slide4:checked ~ .images-container .image4 {
+    opacity: 1;
    }
 
   .btns-and-texts {
